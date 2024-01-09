@@ -1,0 +1,37 @@
+{
+  "name": "eslint-config-bfg",
+  "version": "1.0.2",
+  "description": "Big Fish Games, Inc. ESLint config for engineering tools",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --report-unused-disable-directives .",
+    "pretest": "npm run --silent lint",
+    "test": "jest ./rules/*_test.js",
+    "dev": "jest --watch ./rules/*_test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.corp.bigfishgames.com/npm-packages/eslint-config-bfg"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": {
+    "name": "Jeanne Mitchell",
+    "email": "jeanne.mitchell@bigfishgames.com"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "babel-core": "~6.26.0",
+    "babel-jest": "~22.4.1",
+    "babel-preset-env": "~1.6.1",
+    "eslint": "~4.18.2",
+    "eslint-plugin-import": "~2.9.0",
+    "jest": "~22.4.2",
+    "regenerator-runtime": "~0.11.1"
+  },
+  "peerDependencies": {
+    "eslint": ">= 4"
+  }
+}
